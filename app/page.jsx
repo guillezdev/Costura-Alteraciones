@@ -1,7 +1,7 @@
 import React from "react";
 
 function page() {
-  return <div>My first app with next js</div>;
+  return <div className="text-center">My first app with next js</div>;
 }
 
 export default page;

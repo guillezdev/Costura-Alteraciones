@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import bgimage from "../public/bgimage.jpg";
-import { FaPhoneAlt } from "react-icons/fa";
 
 export function Homepage() {
   return (

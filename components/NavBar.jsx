@@ -7,27 +7,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const NavBar = () => {
-  const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const checkboxRef = useRef(null);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const width = window.innerWidth;
-      setIsMobile(width < 640);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <>
       <div className="h-12"></div>
       <nav
-        className={` fixed top-0 left-0 right-0 z-50  bg-gradient-to-tr from-stone-600 to-stone-900 text-white`}
+        className={`fixed top-0 left-0 right-0 z-50 shadow-lg shadow-black rounded-b-lg bg-black text-white`}
       >
         <div className="container mx-auto py-2 px-6 md:px-8">
           <div className="flex justify-between items-center">
@@ -66,7 +53,7 @@ export const NavBar = () => {
               </ul>
             </div>
             <div className="md:hidden">
-              <label className="bar scale-50" htmlFor="check" for="check">
+              <label className="bar scale-50" htmlfor="check" for="check">
                 <input
                   type="checkbox"
                   ref={checkboxRef}

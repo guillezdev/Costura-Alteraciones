@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { Transition } from "@headlessui/react";
 import LogoYadel from "../public/LogoYadel.webp";
 import Link from "next/link";
@@ -53,7 +53,7 @@ export const NavBar = () => {
               </ul>
             </div>
             <div className="md:hidden">
-              <label className="bar scale-50" htmlfor="check" for="check">
+              <label className="bar scale-50">
                 <input
                   type="checkbox"
                   ref={checkboxRef}

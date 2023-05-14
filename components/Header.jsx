@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import bgimage from "../public/bgimage.jpg";
 
 function Header() {
   return (
@@ -8,7 +6,7 @@ function Header() {
       <header className="text-white  bg-gradientedown">
         <div className="container text-center mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div>
-            <h1 className="text-6xl lg:text-8xl bg-clip-text text-transparent bg-gradient-to-r text-shadow-md shadow-yellow-400 from-green-500 to-green-400 font-bold mb-4">
+            <h1 className="text-6xl bg-clip-text text-transparent bg-gradient-to-r text-shadow-md shadow-yellow-400 from-green-500 to-green-400 font-bold mb-4">
               L&R Aleteration
             </h1>
             <p className="text-xl mb-8">

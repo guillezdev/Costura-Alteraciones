@@ -45,7 +45,7 @@ export const NavBar = () => {
                 <li>
                   <Link
                     href={"/contact"}
-                    className="bg-gradient-to-br from-white to-orange-500 text-black px-4 py-2 rounded-md hover:bg-gray-900 transition-colors duration-300"
+                    className="bg-gradient-to-br from-white to-orange-500 bor text-black px-4 py-2 rounded-md hover:bg-gray-900 transition-colors duration-300"
                   >
                     Contacto
                   </Link>
@@ -77,7 +77,7 @@ export const NavBar = () => {
           >
             {
               <div className="md:hidden mt-10">
-                <ul className="flex items-center h-screen flex-col space-y-2">
+                <ul className="flex items-center flex-col space-y-2">
                   <li>
                     <Link
                       href={"/"}

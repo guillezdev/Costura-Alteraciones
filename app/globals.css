@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .bg-gradientedown {
   position: relative;
   background: url(../public/bgimage.jpg);

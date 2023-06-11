@@ -79,42 +79,30 @@ export const NavBar = () => {
             {
               <div className="md:hidden mt-10">
                 <ul className="flex items-center flex-col space-y-2">
-                  <li>
-                    <Link
-                      href={"/"}
-                      onClick={() => {
-                        setIsOpen(!isOpen);
-                        checkboxRef.current.checked = false;
-                      }}
-                      className="text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
-                    >
-                      Inicio
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={"/Servicios "}
-                      onClick={() => {
-                        setIsOpen(!isOpen);
-                        checkboxRef.current.checked = false;
-                      }}
-                      className="text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
-                    >
-                      Servicios
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={"/contact"}
-                      onClick={() => {
-                        setIsOpen(!isOpen);
-                        checkboxRef.current.checked = false;
-                      }}
-                      className="text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
-                    >
-                      Contacto
-                    </Link>
-                  </li>
+                <li>
+                  <Link
+                    href={"/"}
+                    className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
+                  >
+                  <FaHome />Inicio
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/catalogo"}
+                    className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
+                  >
+                  <FaSignLanguage />Servicios
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/contact"}
+                    className="flex justify-center items-center gap-1 px-2 py-1 rounded-md border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
+                  >
+                   <FaMapPin /> Contacto
+                  </Link>
+                </li>
                 </ul>
               </div>
             }

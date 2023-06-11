@@ -2,3 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.bg-gradientedown {
+    position: relative;
+    background: url(../public/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -11;
+  }
+  
+  .bg-gradientedown::before {
+    content: "";
+    background: linear-gradient(
+      180deg,
+      #000000 0%,
+      #0000006d 36.36%,
+      rgba(41, 37, 36, 0.888) 72.19%,
+      rgba(120, 113, 108, 0.5) 100%
+    );
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+  }
+  
+  /*btn-menu*/
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+    visibility: hidden;
+  }
+  
+  .bar {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+  }
+  
+  .bar span {
+    position: absolute;
+    width: 45px;
+    height: 7px;
+    background: #f1faee;
+    border-radius: 100px;
+    display: inline-block;
+    transition: 0.3s ease;
+    left: 0;
+  }
+  
+  .bar span.top {
+    top: 0;
+  }
+  
+  .bar span.middle {
+    top: 17px;
+  }
+  
+  .bar span.bottom {
+    bottom: 0;
+  }
+  
+  input[type]:checked ~ span.top {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 48px;
+    left: 5px;
+  }
+  
+  input[type]:checked ~ span.bottom {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    width: 48px;
+    bottom: -1px;
+    box-shadow: 0 0 10px #495057;
+  }
+  
+  input[type]:checked ~ span.middle {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  

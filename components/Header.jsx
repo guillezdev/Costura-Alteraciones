@@ -2,11 +2,11 @@
 export function Header() {
   return (
     <>
-      <header className=" text-white  bg-gradientedown">
+      <header className="h-screen flex justify-center items-center text-white  bg-gradientedown">
         <div className="container text-center mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-center items-center">
-            <h1 className="text-6xl font-bold mb-4">L&R Aleteration</h1>
-            <p className="text-xl mb-8 text-gray-300 max-w-xl" >
+            <h1 className="text-6xl lg:text-8xl font-bold mb-4">L&R Aleteration</h1>
+            <p className="text-xl lg:text-2xl mb-8 text-gray-300 max-w-xl" >
               Ofrecemos servicios de <samp className="text-gray-50 font-semibold">alta calidad</samp> en <samp className="text-gray-50 font-semibold">arreglos</samp> y <samp className="text-gray-50 font-semibold">alteraciones</samp> de
               ropa para asegurar que tus prendas se ajusten perfectamente a ti.
             </p>

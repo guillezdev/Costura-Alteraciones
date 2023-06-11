@@ -5,7 +5,7 @@ import { Transition } from "@headlessui/react";
 import LogoYadel from "../public/LogoYadel.webp";
 import Link from "next/link";
 import Image from "next/image";
-import { FaHome,FaPhoneAlt,FaSignLanguage } from "react-icons/fa";
+import { FaHome,FaMapPin,FaSignLanguage } from "react-icons/fa";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,9 +46,9 @@ export const NavBar = () => {
                 <li>
                   <Link
                     href={"/contact"}
-                    className="flex justify-center items-center gap-1 px-2 py-1 rounded-md border-dashed border-2 border-gray-50"
+                    className="flex justify-center items-center gap-1 px-2 py-1 rounded-md border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
                   >
-                   <FaPhoneAlt /> Contacto
+                   <FaMapPin /> Contacto
                   </Link>
                 </li>
               </ul>

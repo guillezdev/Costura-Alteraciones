@@ -4,12 +4,12 @@ import { GiSewingNeedle } from "react-icons/gi";
 import { RiScissorsCutFill } from "react-icons/ri";
 function Services() {
   return (
-    <section className="bg-black text-white">
+    <section className="bg-stone-800 text-white">
       <div className="w-full flex justify-center flex-col items-center p-5">
         <h1 className="text-center text-4xl pt-4">Servicios</h1>
         <div className="text-center h-1 w-32 border-dashed border-2 border-stone-500 rounded-lg "></div>
       </div>
-      <div className="flex gap-4 justify-center items-center bg-stone-800 py-12 flex-wrap">
+      <div className="flex gap-4 justify-center items-center py-12 flex-wrap">
         <div className="flex flex-col max-w-xs border-solid border-2 rounded-lg p-2">
           <div className="flex flex-col gap-2 ">
             <FaRulerCombined size={200} />

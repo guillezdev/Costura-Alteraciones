@@ -1,9 +1,22 @@
-import React from 'react'
+"use client";
 
-function Testimonials() {
+import { Carousel } from "flowbite-react";
+import TestimonialCard from "./TestimonialCard ";
+
+export default function SlideAsAnything() {
   return (
-    <div>Testimonials</div>
-  )
+    <section className="h-screen bg-black">
+      <Carousel>
+        <div className="flex items-center justify-center gap-2 bg-white text-black">
+          <TestimonialCard />
+        </div>
+        <div className="flex h-full items-center justify-center bg-black">
+          <TestimonialCard />
+        </div>
+        <div className="flex h-full items-center justify-center bg-black">
+        <TestimonialCard />
+        </div>
+      </Carousel>
+    </section>
+  );
 }
-
-export default Testimonials

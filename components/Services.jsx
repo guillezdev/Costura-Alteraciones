@@ -13,36 +13,32 @@ function Services() {
         <div className="flex flex-col max-w-xs border-solid border-2 rounded-lg p-2">
           <div className="flex flex-col gap-2 ">
             <FaRulerCombined size={200} />
-            <h1>Ajuste de Talla</h1>
+            <h2 className="font-semibold text-xl bg-stone-700 rounded-md p-2">Ajuste de Talla</h2>
           </div>
-
-          <div className="h-1 w-12 bg-stone-600 rounded-lg mb-2"></div>
-          <p>
+          <p className="text-stone-300">
             Si tienes una prenda que te encanta pero no te queda bien, ¡no te
-            preocupes! Ofrecemos servicios de ajuste de talla para que esa
+            preocupes! Ofrecemos servicios de <span className="text-white">ajuste de talla</span> para que esa
             prenda se ajuste perfectamente a tu cuerpo.
           </p>
         </div>
-        <div className="flex flex-col max-w-xs border-solid border-2 rounded-lg p-2 py-6">
+        <div className="flex flex-col max-w-xs border-solid border-2 rounded-lg p-2">
           <div className="flex flex-col gap-2 ">
             <GiSewingNeedle size={200} />
-            <h1>Reparación de Roturas</h1>
+            <h2 className="font-semibold text-xl bg-stone-700 rounded-md p-2">Reparación de Roturas</h2>
           </div>
-          <div className="h-1 w-12 bg-stone-600 rounded-lg mb-2"></div>
-          <p>
+          <p className="text-stone-300">
             ¿Tienes una prenda favorita que tiene un agujero o una
-            rasgadura?¡podemos ayudarte!. Ofrecemos servicios de reparación de
-            roturas para que puedas seguir usando tus prendas favoritas.
+            rasgadura?¡podemos ayudarte!. Ofrecemos servicios de <span className="text-white">reparación de
+            roturas</span> para que puedas seguir usando tus prendas favoritas.
           </p>
         </div>
         <div className="flex flex-col max-w-xs border-solid border-2 rounded-lg p-2">
           <div className="flex flex-col gap-2 ">
             <RiScissorsCutFill size={200} />
-            <h1>Alteración de Longitud</h1>
+            <h2 className="font-semibold text-xl bg-stone-700 rounded-md p-2">Alteración de Longitud</h2>
           </div>
 
-          <div className="h-1 w-12 bg-stone-600 rounded-lg mb-2"></div>
-          <p>
+          <p className="text-stone-300">
             ¿Tienes una prenda que es demasiado larga o demasiado corta para ti?
             Ofrecemos servicios de alteración de longitud para que esa prenda se
             ajuste perfectamente a tu altura.

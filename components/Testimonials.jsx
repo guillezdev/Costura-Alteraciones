@@ -5,9 +5,9 @@ import TestimonialCard from "./TestimonialCard ";
 
 export default function SlideAsAnything() {
   return (
-    <section className="h-screen bg-black py-12">
+    <section className="h-screen bg-black py-14">
         <h1 className="text-center pt-4 text-white text-4xl">
-          Que piensan nestros clientes?
+          Que piensan nuestros clientes?
         </h1>
       <Carousel>
         <div className="flex h-full items-center justify-center bg-black mb-4">

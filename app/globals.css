@@ -1,9 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Simonetta&display=swap');
+body{
+  font-family: 'Roboto', sans-serif;
 
-
-
+}
+.space{
+  letter-spacing: 4px;
+}
 .bg-gradientedown {
     position: relative;
     background: url(../public/bgimage.jpg);

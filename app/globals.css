@@ -6,9 +6,7 @@ body{
   font-family: 'Roboto', sans-serif;
 
 }
-.space{
-  letter-spacing: 4px;
-}
+
 .bg-gradientedown {
     position: relative;
     background: url(../public/bgimage.jpg);

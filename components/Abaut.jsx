@@ -15,8 +15,8 @@ const About = () => {
         <h3 className='text-stone-50 bg-stone-700 inline-block p-1 rounded-md'>¿Que ofresco?</h3>
         <div className='flex gap-3 text-stone-300'><p>a</p> <p>b</p> <p>c</p></div>
       </div>
-      <div className="md:w-1/2">
-        <img src="https://www.ohchr.org/sites/default/files/styles/hero_5_image_desktop/public/2022-11/women-rights-main-image.jpg?itok=RRGl2PFb" alt="Sobre mí" className="rounded-lg shadow-xl shadow-black px-2" />
+      <div className="md:w-1/2 px-2">
+        <img src="https://www.ohchr.org/sites/default/files/styles/hero_5_image_desktop/public/2022-11/women-rights-main-image.jpg?itok=RRGl2PFb" alt="Sobre mí" className="rounded-lg shadow-xl shadow-black" />
       </div>
       
     </section>

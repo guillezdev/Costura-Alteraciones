@@ -1,7 +1,7 @@
 export function Header() {
   return (
     <>
-      <header className="h-screen flex justify-center items-center text-white  bg-gradientedown">
+      <header id="home" className="h-screen flex justify-center items-center text-white  bg-gradientedown">
         <div className="container text-center mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-center items-center">
             <div className="flex flex-col justify-center items-center">

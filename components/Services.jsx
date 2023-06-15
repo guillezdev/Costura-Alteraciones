@@ -4,7 +4,7 @@ import { GiSewingNeedle } from "react-icons/gi";
 import { RiScissorsCutFill } from "react-icons/ri";
 function Services() {
   return (
-    <section className="bg-stone-800 text-white">
+    <section id="services" className="bg-stone-800 text-white">
       <div className="w-full flex justify-center flex-col items-center p-5">
         <h1 className="text-center text-4xl pt-4">Servicios</h1>
         <div className="text-center h-1 w-32 border-dashed border-2 border-stone-500 rounded-lg "></div>

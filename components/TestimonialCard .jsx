@@ -23,7 +23,7 @@ const TestimonialCard = ({name ,description}) => {
             <FaStar className="text-yellow-400 mr-1" />
             <FaStar className="text-yellow-400" />
           </div>
-          <span className="ml-2 text-lg font-bold">5.0</span>
+          <span className="ml-2 text-lg font-bold bg-stone-700 p-1 rounded-md text-white">5.0</span>
         </div>
       </div>
     </div>

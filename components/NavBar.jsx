@@ -3,9 +3,10 @@
 import React, { useState, useRef } from "react";
 import { Transition } from "@headlessui/react";
 import LogoYadel from "../public/LogoYadel.webp";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import Image from "next/image";
 import { FaHome,FaMapPin,FaSignLanguage } from "react-icons/fa";
+import { BsPersonVcard } from "react-icons/bs";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,12 @@ export const NavBar = () => {
         <div className="container mx-auto py-2 px-6 md:px-8">
           <div className="flex justify-between items-center">
             <Link
-              href={"/"}
+               to='home'
+               spy={true}
+               smooth={true}
+               offset={-70}
+               duration={500}
+               cursor='pointer'
               className="flex items-center p-0 m-0 self-center cursor-pointer select-none"
             >
               <Image src={LogoYadel} className="h-12 w-12 m-0 p-0" alt="Logo" />
@@ -29,7 +35,12 @@ export const NavBar = () => {
               <ul className="flex items-center space-x-4">
                 <li>
                   <Link
-                    href={"/"}
+                   to='home'
+                   spy={true}
+                   smooth={true}
+                   offset={-70}
+                   duration={500}
+                   cursor='pointer'
                     className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
                   >
                   <FaHome />Inicio
@@ -37,7 +48,12 @@ export const NavBar = () => {
                 </li>
                 <li>
                   <Link
-                    href={"/catalogo"}
+                    to='services'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    cursor='pointer'
                     className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
                   >
                   <FaSignLanguage />Servicios
@@ -45,7 +61,25 @@ export const NavBar = () => {
                 </li>
                 <li>
                   <Link
-                    href={"/contact"}
+                    to='about'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    cursor='pointer'
+                    className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
+                  >
+                  <BsPersonVcard />Sobre mi
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    cursor='pointer'
                     className="flex justify-center items-center gap-1 px-2 py-1 rounded-md border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
                   >
                    <FaMapPin /> Contacto
@@ -81,7 +115,12 @@ export const NavBar = () => {
                 <ul className="flex items-center flex-col space-y-2">
                 <li>
                   <Link
-                    href={"/"}
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    cursor='pointer'
                     className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
                   >
                   <FaHome />Inicio
@@ -89,7 +128,12 @@ export const NavBar = () => {
                 </li>
                 <li>
                   <Link
-                    href={"/catalogo"}
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    cursor='pointer'
                     className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
                   >
                   <FaSignLanguage />Servicios
@@ -97,7 +141,12 @@ export const NavBar = () => {
                 </li>
                 <li>
                   <Link
-                    href={"/contact"}
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    cursor='pointer'
                     className="flex justify-center items-center gap-1 px-2 py-1 rounded-md border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
                   >
                    <FaMapPin /> Contacto

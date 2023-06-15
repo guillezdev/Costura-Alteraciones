@@ -5,7 +5,7 @@ import { Transition } from "@headlessui/react";
 import LogoYadel from "../public/LogoYadel.webp";
 import { Link } from "react-scroll";
 import Image from "next/image";
-import { FaHome,FaMapPin,FaSignLanguage } from "react-icons/fa";
+import { FaHome, FaMapPin, FaSignLanguage } from "react-icons/fa";
 import { BsPersonVcard } from "react-icons/bs";
 
 export const NavBar = () => {
@@ -21,12 +21,12 @@ export const NavBar = () => {
         <div className="container mx-auto py-2 px-6 md:px-8">
           <div className="flex justify-between items-center">
             <Link
-               to='home'
-               spy={true}
-               smooth={true}
-               offset={-70}
-               duration={500}
-               cursor='pointer'
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              cursor="pointer"
               className="flex items-center p-0 m-0 self-center cursor-pointer select-none"
             >
               <Image src={LogoYadel} className="h-12 w-12 m-0 p-0" alt="Logo" />
@@ -35,54 +35,57 @@ export const NavBar = () => {
               <ul className="flex items-center space-x-4">
                 <li>
                   <Link
-                   to='home'
-                   spy={true}
-                   smooth={true}
-                   offset={-70}
-                   duration={500}
-                   cursor='pointer'
-                    className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
-                  >
-                  <FaHome />Inicio
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to='services'
+                    to="home"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    cursor='pointer'
+                    cursor="pointer"
                     className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
                   >
-                  <FaSignLanguage />Servicios
+                    <FaHome />
+                    Inicio
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to='about'
+                    to="services"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    cursor='pointer'
+                    cursor="pointer"
                     className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
                   >
-                  <BsPersonVcard />Sobre mi
+                    <FaSignLanguage />
+                    Servicios
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to='home'
+                    to="about"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    cursor='pointer'
+                    cursor="pointer"
+                    className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
+                  >
+                    <BsPersonVcard />
+                    Sobre mi
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    cursor="pointer"
                     className="flex justify-center items-center gap-1 px-2 py-1 rounded-md border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
                   >
-                   <FaMapPin /> Contacto
+                    <FaMapPin /> Contacto
                   </Link>
                 </li>
               </ul>
@@ -113,45 +116,61 @@ export const NavBar = () => {
             {
               <div className="md:hidden mt-10">
                 <ul className="flex items-center flex-col space-y-2">
-                <li>
-                  <Link
-                    to='home'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    cursor='pointer'
-                    className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
-                  >
-                  <FaHome />Inicio
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to='home'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    cursor='pointer'
-                    className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
-                  >
-                  <FaSignLanguage />Servicios
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to='home'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    cursor='pointer'
-                    className="flex justify-center items-center gap-1 px-2 py-1 rounded-md border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
-                  >
-                   <FaMapPin /> Contacto
-                  </Link>
-                </li>
+                  <li>
+                    <Link
+                      to="home"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      cursor="pointer"
+                      className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
+                    >
+                      <FaHome />
+                      Inicio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="services"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      cursor="pointer"
+                      className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
+                    >
+                      <FaSignLanguage />
+                      Servicios
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="about"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      cursor="pointer"
+                      className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
+                    >
+                      <BsPersonVcard />
+                      Sobre mi
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="home"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      cursor="pointer"
+                      className="flex justify-center items-center gap-1 px-2 py-1 rounded-md border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
+                    >
+                      <FaMapPin /> Contacto
+                    </Link>
+                  </li>
                 </ul>
               </div>
             }

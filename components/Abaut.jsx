@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { BsCheckCircle, BsSpeedometer } from "react-icons/bs";
 
 const About = () => {
@@ -16,15 +17,16 @@ const About = () => {
           medida y arreglos de todo tipo. Siempre estoy buscando aprender nuevas
           técnicas y tendencias para ofrecer el mejor servicio a mis clientes.
         </p>
-        <h3 className="text-stone-50 bg-stone-700 inline-block p-1 rounded-md">
+        <h3 className="text-stone-50 bg-stone-700 inline-block p-1 rounded-md rounded-br-none">
           ¿Que ofresco?
         </h3>
         <div className="flex justify-start items-center gap-3 text-stone-300 p-1">
           <BsCheckCircle />
-          <p>Calidad</p> 
-          <span className="bg-stone-700 rounded-md p-1">&</span>
+          <p>Calidad</p>
+          <span className="bg-stone-700 rounded-md px-1">&</span>
           <BsSpeedometer />
-          <p>Velocidad</p><br />
+          <p>Velocidad</p>
+          <br />
           <p className="text-green-300">¡Por el mejor precio!.</p>
         </div>
       </div>

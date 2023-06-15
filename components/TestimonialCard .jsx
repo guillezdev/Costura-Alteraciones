@@ -4,7 +4,7 @@ import "tailwindcss/tailwind.css";
 
 const TestimonialCard = ({name ,description}) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center lg:items-start bg-stone-800 rounded-lg shadow-md p-6 lg:p-8">
+    <div className="flex flex-col lg:flex-row items-center lg:items-start bg-stone-900 rounded-lg shadow-md p-6 lg:p-8">
       <div className="w-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-8">
         <img
           src="https://via.placeholder.com/300x200"

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Abaut() {
   return (
-    <div>Abaut</div>
+    <div></div>
   )
 }
 

@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import { Transition } from "@headlessui/react";
-import LogoYadel from "../public/LogoYadel.webp";
+import LogoYadel from "../public/LogoYadel.jpg";
 import { Link } from "react-scroll";
 import Image from "next/image";
 import { FaHome, FaMapPin, FaSignLanguage } from "react-icons/fa";
@@ -83,7 +83,7 @@ export const NavBar = () => {
                     offset={-70}
                     duration={500}
                     cursor="pointer"
-                    className="flex justify-center items-center gap-1 px-2 py-1 rounded-md border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
+                    className="flex justify-center items-center gap-1 px-2 py-1 cursor-pointer rounded-md border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
                   >
                     <FaMapPin /> Contacto
                   </Link>
@@ -166,7 +166,7 @@ export const NavBar = () => {
                       offset={-70}
                       duration={500}
                       cursor="pointer"
-                      className="flex justify-center items-center gap-1 px-2 py-1 rounded-md border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
+                      className="flex justify-center items-center gap-1 px-2 py-1 rounded-md cursor-pointer border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
                     >
                       <FaMapPin /> Contacto
                     </Link>

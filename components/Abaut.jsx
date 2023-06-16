@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from 'next/image'
 import { BsCheckCircle, BsSpeedometer } from "react-icons/bs";
 
 const About = () => {
@@ -31,8 +31,10 @@ const About = () => {
         </div>
       </div>
       <div className="md:w-1/2 px-2">
-        <img
-          src="https://www.ohchr.org/sites/default/files/styles/hero_5_image_desktop/public/2022-11/women-rights-main-image.jpg?itok=RRGl2PFb"
+        <Image
+           width={500}
+           height={500}
+          src="/Loraine.jpg"
           alt="Sobre mí"
           className="rounded-lg shadow-xl shadow-black"
         />

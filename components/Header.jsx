@@ -13,7 +13,7 @@ export function Header() {
                 L&R
               </h1>
               <h2 className="text-4xl lg:text-6xl mb-4 tracking-[15px]">
-                Aleteration
+                Alteration
               </h2>
             </div>
             <p className="text-xl lg:text-2xl mb-8 text-gray-300 max-w-xl">

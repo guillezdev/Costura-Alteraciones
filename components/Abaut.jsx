@@ -18,7 +18,7 @@ const About = () => {
           técnicas y tendencias para ofrecer el mejor servicio a mis clientes.
         </p>
         <h3 className="text-stone-50 bg-stone-700 inline-block p-1 rounded-md rounded-br-none">
-          ¿Que ofresco?
+          ¿Que ofrezco?
         </h3>
         <div className="flex justify-start items-center gap-3 text-stone-300 p-1">
           <BsCheckCircle />

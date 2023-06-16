@@ -77,7 +77,7 @@ export const NavBar = () => {
                 </li>
                 <li>
                   <Link
-                    to="home"
+                    to="contact"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -160,7 +160,7 @@ export const NavBar = () => {
                   </li>
                   <li>
                     <Link
-                      to="home"
+                      to="contact"
                       spy={true}
                       smooth={true}
                       offset={-70}

@@ -22,7 +22,7 @@ export function Header() {
               href="#"
               className="bg-black text-gray-50 py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 inline-block"
             >
-              Contactar
+              Llamame
             </a>
           </div>
         </div>

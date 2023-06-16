@@ -34,7 +34,7 @@ const About = () => {
         <img
           src="https://www.ohchr.org/sites/default/files/styles/hero_5_image_desktop/public/2022-11/women-rights-main-image.jpg?itok=RRGl2PFb"
           alt="Sobre mí"
-          className="rounded-full shadow-xl shadow-black"
+          className="rounded-lg shadow-xl shadow-black"
         />
       </div>
     </section>

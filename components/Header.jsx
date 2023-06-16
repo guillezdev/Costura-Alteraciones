@@ -24,7 +24,7 @@ export function Header() {
               de ropa para asegurar que tus prendas se ajusten perfectamente a
               ti.
             </p>
-            <a href="tel+12345677" className="bg-stone-950 hover:scale-105 z-50 text-white font-bold py-2 px-4 rounded-md flex items-center">
+            <a href="#" className="bg-stone-950 hover:scale-105 z-50 text-white font-bold py-2 px-4 rounded-md flex items-center">
               <FaPhoneSquareAlt size={24} className="mr-2" />
               Llamame
             </a>

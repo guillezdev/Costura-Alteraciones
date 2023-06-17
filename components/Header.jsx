@@ -1,15 +1,17 @@
-import { FaPhoneSquareAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+
 export function Header() {
   return (
     <>
       <header
         id="home"
-        className="h-screen flex justify-center items-center text-white  bg-gradientedown"
+        className="h-screen flex justify-center z-10 items-center text-white relative bg-img"
       >
+        <div className="absolute h-screen w-full gradientdown z-[-8]"></div>
         <div className="container text-center mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-center items-center">
             <div className="flex flex-col justify-center items-center">
-              <h1 className=" text-6xl lg:text-8xl font-normal font-serif">
+              <h1 className="text-6xl lg:text-8xl font-normal font-serif">
                 L&R
               </h1>
               <h2 className="text-4xl lg:text-6xl mb-4 tracking-[15px]">
@@ -24,9 +26,12 @@ export function Header() {
               de ropa para asegurar que tus prendas se ajusten perfectamente a
               ti.
             </p>
-            <a href="#" className="bg-stone-950 hover:scale-105 z-50 text-white font-bold py-2 px-4 rounded-md flex items-center">
-              <FaPhoneSquareAlt size={24} className="mr-2" />
-              Llamame
+            <a
+               href="tel:+1(786)823-9937"
+              className="[&>a]: flex items-center text-lg gap-2 bg-stone-950 hover:scale-105 text-white font-normal py-2 px-4 rounded-md "
+            >
+              <FaPhoneAlt size={24} className="" />
+              Llámame
             </a>
           </div>
         </div>

@@ -1,6 +1,5 @@
 "use client";
-
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import LogoYadel from "../public/LogoYadel.jpg";
 import { Link } from "react-scroll";
@@ -11,11 +10,31 @@ import { BsPersonVcard } from "react-icons/bs";
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const checkboxRef = useRef(null);
+  const navBarRef = useRef(null);
+  useEffect(() => {
+    const handleBodyClick = (event) => {
+      if (
+        !navBarRef.current.contains(event.target) &&
+        !checkboxRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+    document.body.addEventListener("click" , handleBodyClick)
+    return () => {
+      document.body.removeEventListener("click", handleBodyClick);
+    };
+  }, []);
+  const handleCheckboxClick = (event) => {
+    event.checked = !isOpen;
+    setIsOpen(!isOpen);
+  };
 
   return (
     <>
       <div className="h-12"></div>
       <nav
+        ref={navBarRef}
         className={`fixed top-0 left-0 right-0 z-50 shadow-lg shadow-black rounded-b-lg bg-black text-white`}
       >
         <div className="container mx-auto py-2 px-6 md:px-8">
@@ -95,7 +114,8 @@ export const NavBar = () => {
                 <input
                   type="checkbox"
                   ref={checkboxRef}
-                  onClick={() => setIsOpen(!isOpen)}
+                  checked={isOpen}
+                  onChange={handleCheckboxClick}
                   id="check"
                 />
                 <span className="top"></span>
@@ -124,6 +144,7 @@ export const NavBar = () => {
                       offset={-70}
                       duration={500}
                       cursor="pointer"
+                      onClick={() => setIsOpen(!isOpen)}
                       className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
                     >
                       <FaHome />
@@ -138,6 +159,7 @@ export const NavBar = () => {
                       offset={-70}
                       duration={500}
                       cursor="pointer"
+                      onClick={() => setIsOpen(!isOpen)}
                       className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
                     >
                       <FaSignLanguage />
@@ -152,6 +174,7 @@ export const NavBar = () => {
                       offset={-70}
                       duration={500}
                       cursor="pointer"
+                      onClick={() => setIsOpen(!isOpen)}
                       className="flex justify-center items-center gap-1 text-gray-50 font-semibold hover:text-stone-500 cursor-pointer select-none"
                     >
                       <BsPersonVcard />
@@ -166,6 +189,7 @@ export const NavBar = () => {
                       offset={-70}
                       duration={500}
                       cursor="pointer"
+                      onClick={() => setIsOpen(!isOpen)}
                       className="flex justify-center items-center gap-1 px-2 py-1 rounded-md cursor-pointer border-dashed border-2 border-gray-50 hover:border-stone-500 hover:text-stone-500"
                     >
                       <FaMapPin /> Contacto

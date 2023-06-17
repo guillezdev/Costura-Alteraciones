@@ -7,7 +7,13 @@ body{
   font-family: 'Roboto', sans-serif;
 
 }
-
+@font-face {
+  font-family: 'Maharlika';
+  src: url('../public/maharlika-cufonfonts/Maharlika-Regular.ttf') format('truetype');
+}
+.changeFont{
+  font-family: Maharlika , sans-serif ;
+}
 .bg-img {
     position: relative;
     background: url(../public/bgimage.jpg);

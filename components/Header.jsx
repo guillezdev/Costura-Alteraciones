@@ -11,7 +11,7 @@ export function Header() {
         <div className="container text-center mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-center items-center">
             <div className="flex flex-col justify-center items-center">
-              <h1 className="text-6xl lg:text-8xl font-normal font-serif">
+              <h1 className="changeFont text-6xl lg:text-8xl font-normal">
                 L&R
               </h1>
               <h2 className="text-4xl lg:text-6xl mb-4 tracking-[15px]">

@@ -1,6 +1,6 @@
 import "./globals.css";
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
 export const metadata = {
   title: "L&R Alteration",
@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
       <body className="bg-black">
         <NavBar />
         <ScrollToTop />
-          {children}
+        {children}
         <Footer />
-        </body> 
+      </body>
     </html>
   );
 }

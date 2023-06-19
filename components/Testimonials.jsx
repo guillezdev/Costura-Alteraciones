@@ -5,7 +5,7 @@ import TestimonialCard from "./TestimonialCard ";
 
 export default function SlideAsAnything() {
   return (
-    <section className="h-[700px] md:h-screen bg-black py-14 mb-16">
+    <section className="flex flex-col items-center justify-center  h-[650px] lg:h-[80vh] bg-black py-14 mb-16">
       <h1 className="text-center font-bold pt-4 text-white text-4xl">
         ¿Que piensan nuestros clientes?
       </h1>
@@ -26,7 +26,7 @@ export default function SlideAsAnything() {
           </svg>
         </div>
       </div>
-      <Carousel indicators={true} leftControl=" " rightControl=" ">
+      <Carousel className="max-w-5xl px-1" indicators={true} slideInterval={10000} leftControl=" " rightControl=" ">
         <div className="flex h-full items-center justify-center bg-black mb-4">
           <TestimonialCard
             name="Luisa"

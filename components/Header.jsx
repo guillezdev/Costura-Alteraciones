@@ -5,7 +5,7 @@ export function Header() {
     <>
       <header
         id="home"
-        className="h-screen flex justify-center z-10 items-center text-white relative bg-img"
+        className="min-h-screen flex justify-center z-10 items-center text-white relative bg-img"
       >
         <div className="absolute h-screen w-full gradientdown z-[-8]"></div>
         <div className="container text-center mx-auto py-12 px-4 sm:px-6 lg:px-8">

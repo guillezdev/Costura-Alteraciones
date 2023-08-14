@@ -30,7 +30,7 @@ export const ScrollToTop = () => {
   }
 
   return (
-    <button className="fixed bottom-4 right-4 bg-stone-800 text-white p-2 rounded-full shadow-md animate-bounce z-50" onClick={handleClick}>
+    <button className="fixed bottom-4 right-4 bg-stone-800 text-white p-2 rounded-full shadow-md z-50" onClick={handleClick}>
       <FaArrowUp />
     </button>
   );

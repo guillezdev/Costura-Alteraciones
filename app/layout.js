@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
 export const metadata = {
   title: "L&R Alteration",
-  description: "Soy una costurera con mas de 15 años de experiencia",
+  description: "Soy una costurera con mas de 20 años de experiencia",
 };
 
 export default function RootLayout({ children }) {

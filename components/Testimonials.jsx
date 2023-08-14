@@ -5,7 +5,7 @@ import TestimonialCard from "./TestimonialCard ";
 
 export default function SlideAsAnything() {
   return (
-    <section className="flex flex-col items-center justify-center  h-[900px] lg:h-[80vh] bg-black py-14 ">
+    <section className="flex flex-col items-center justify-center  h-[750px] lg:h-[80vh] bg-black py-14 ">
       <h1 className="text-center font-bold pt-4 text-white text-4xl">
         ¿Que piensan nuestros clientes?
       </h1>
@@ -42,7 +42,7 @@ export default function SlideAsAnything() {
         <div className="flex h-full items-center justify-center bg-black px-5">
           <TestimonialCard
             name="Cecilia"
-            description="No puedo expresar lo feliz que estoy con el trabajo que hizo Loraine en mi vestido de graduación. Fue un proceso emocionante, pero también estresante, ya que quería que todo fuera perfecto. Loraine no solo ajustó el vestido a mi cuerpo de manera increíble, sino que también me brindó tranquilidad y confianza durante todo el proceso. Definitivamente volveré a acudir a sus servicios de costura en el futuro."
+            description="No puedo expresar lo feliz que estoy con el trabajo que hizo Loraine en mi vestido de graduación. Fue un proceso emocionante, pero también estresante, ya que quería que todo fuera perfecto. Loraine no solo ajustó el vestido a mi cuerpo de manera increíble, sino que también me brindó tranquilidad y confianza durante todo el proceso."
           />
         </div>
       </Carousel>

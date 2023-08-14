@@ -12,24 +12,21 @@ const About = () => {
         <div className="max-w-xl flex flex-col px-2">
           <h2 className="text-4xl  text-stone-50 font-bold mb-4">Sobre mí</h2>
           <p className="text-stone-300 leading-relaxed">
-            Soy una costurera con más de{" "}
-            <span className="bg-stone-700 rounded-md p-1">+20</span> años de
-            experiencia en el sector. Me especializo en confeccionar prendas a
-            medida y arreglos de todo tipo. Siempre estoy buscando aprender
-            nuevas técnicas y tendencias para ofrecer el mejor servicio a mis
-            clientes.
+
+
+            Como costurera profesional con mas de <span className="bg-stone-700 rounded-md p-1">+20</span> años de experiencia te garantizo el mejor servicio al renovar tus prendas a medida buscando siempre la perfección de un arreglo invisible.
           </p>
-          <h3 className="text-stone-50 bg-stone-700 inline-block p-1 rounded-md rounded-br-none">
-            ¿Que ofrezco?
+          <h3 className="text-stone-50 bg-stone-700 inline-block p-1 rounded-md rounded-br-none  mt-4">
+            ¿Que ofrece L&R Alteration?
           </h3>
           <div className="flex justify-start items-center gap-3 text-stone-300 p-1">
             <BsCheckCircle />
             <p>Calidad</p>
-            <span className="bg-stone-700 rounded-md px-1">&</span>
+
             <BsSpeedometer />
             <p>Velocidad</p>
-            <br />
-            <p className="text-green-300">¡Por el mejor precio!.</p>
+            <span className="bg-stone-700 rounded-md px-1">&</span>
+            <p className="text-green-300">¡Los mejores precios!.</p>
           </div>
         </div>
         <div className="flex items-center justify-center w-full px-2">

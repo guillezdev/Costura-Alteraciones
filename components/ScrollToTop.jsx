@@ -9,7 +9,7 @@ export const ScrollToTop = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 300) {
+      if (window.scrollY > 300) {
         setVisible(true);
       } else {
         setVisible(false);

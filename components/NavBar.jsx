@@ -20,7 +20,7 @@ export const NavBar = () => {
         setIsOpen(false);
       }
     };
-    document.body.addEventListener("click" , handleBodyClick)
+    document.body.addEventListener("click", handleBodyClick)
     return () => {
       document.body.removeEventListener("click", handleBodyClick);
     };

@@ -29,7 +29,7 @@ function Services() {
           <p className="text-stone-300">
             ¿Tienes una prenda favorita que tiene un agujero o una
             rasgadura?¡podemos ayudarte!. Ofrecemos servicios de <span className="text-white">reparación de
-            roturas</span> para que puedas seguir usando tus prendas favoritas.
+              roturas</span> para que puedas seguir usando tus prendas favoritas.
           </p>
         </div>
         <div className="flex flex-col max-w-xs border-solid border-2 rounded-lg p-2">

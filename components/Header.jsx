@@ -27,7 +27,7 @@ export function Header() {
               ti.
             </p>
             <a
-               href="tel:+1(786)813-9937"
+              href="tel:+1(786)813-9937"
               className="[&>a]: flex items-center text-lg gap-2 bg-stone-950 hover:scale-105 text-white font-normal py-2 px-4 rounded-md "
             >
               <FaPhoneAlt size={24} className="" />
